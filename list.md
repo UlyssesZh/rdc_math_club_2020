@@ -127,3 +127,9 @@
 2021/04/29
 
 ![Fourier分析](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/fourier_analysis.svg)
+
+# 21 常微分方程
+
+2021/05/06
+
+![常微分方程](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/ode.jpeg)
