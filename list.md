@@ -133,3 +133,9 @@
 2021/05/06
 
 ![常微分方程](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/ode.jpeg)
+
+# 22 常微分方程
+
+2021/05/13
+
+![常微分方程](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/ode_2.svg)
