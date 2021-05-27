@@ -145,3 +145,9 @@
 2021/05/20
 
 [复变函数](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/complex.pdf)
+
+# 24 线性赋范空间
+
+2021/05/27
+
+![线性赋范空间](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/normed_space.svg)
