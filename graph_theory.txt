@@ -1,0 +1,183 @@
+Graph Theory
+
+
+graph: G = (P, L)
+P: points / vertices, non-empty set
+L: edges / sides
+
+P(G) denotes the points' set of graph G
+L(G) denotes the edges' set of graph G
+
+Unimportant:
+- position of points
+- geometric shapes of edges
+
+isomorphic graphs:
+
+simple graphs:
+- no point is directly connected to itself
+- no double (or more) edges
+
+subgraphs:
+P(H) is a subset of P(G), L(H) is a subset of L(G)
+=> H is a subgraph of G
+
+v in P(G) <=> v in G (abbr)
+
+degree:
+d(v) is the number of edges connected to v
+
+adjacency matrix:
+a_{ij} = whether vertex i and j are connected
+
+A is a symmetric matrix (for undirected graphs)
+
+Theorem: sum of degrees is 2 * number of edges
+
+Theorem: for any graph, there are two vertices with the same degree.
+Proof.
+There cannot be a vertex with 0 degree and a vertex with n-1 degree at the same time
+=> There are n-1 choices of degrees
+=> Pigeonhole: n vertices into at most n-1 different degrees
+=> at least 2 vertices with the same degree
+QED
+
+Theorem: for any graph, the number of vertices with odd degree is an even number
+
+?! for arbitrary n distinct positive integers, there are even number of numbers that have odd number of coprime numbers among these n integers.
+
+
+path:
+Suppose v and v' are two vertices in G, and a sequence v_0, v_1, ..., v_n is a path between v and v', if
+	v_0 = v,
+	v_n = v',
+	for any i, v_i is connected to v_{i+1}.
+
+length of path: n
+
+simple path:
+	v_0, v_1, ..., v_{n-1} are distinct to each other,
+	v_1, v_2, ..., v_n are distinct to each other.
+
+loop:
+path with v_0 = v_n and length >= 3
+
+connected vertices:
+v and v' are connected vertices if there exists a path starting with v and ending with v' in G
+
+connected vs adjacent
+
+connected graph:
+A graph is connected if any two points in the graph are connected
+
+(connected) component of a graph:
+(Connected) components of G is the equivalence class of G under the equivalence relation:
+	v1 ~ v2 <=> v1 is connected to v2
+
+A graph is connected iff it has only one component
+
+
+
+weight:
+vertex weight: w: P(G) -> R
+edge weight: w: L(G) -> R
+
+Dijkstra algorithm: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+
+Floyd algorithm: https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
+
+
+tree:
+a connected graph with no loops
+
+Theorem: The following are equivalent:
+	G is a tree;
+	G is a connected graph with no loops;
+	For any two vertices in G, there is only one simple path connecting them;
+	Deleting any edge in G, then G is not connected;
+	G has no loops, and G has n-1 edges;
+	G is connected, and G has n-1 edges.
+
+forest:
+a graph with no loops
+
+arborescence: a tree with a root
+order
+parent
+child
+brother
+
+binary tree
+
+traverse a binary tree:
+- first root:
+  1. root
+  2. traverse left subtree
+  3. traverse right subtree
+- middle root:
+  1. traverse left subtree
+  2. root
+  3. traverse right subtree
+- last root:
+  1. traverse left subtree
+  2. traverse right subtree
+  3. root
+
+Kruskal's algorithm: finds a minimum spanning forest
+(the forest the least sum of edge weights)
+https://en.wikipedia.org/wiki/Kruskal%27s_algorithm
+
+directed graph
+arc (instead of edge)
+initial vertex, final vertex
+
+indegree, outdegree
+
+directed subgraph
+
+directed path
+simple directed path
+
+strongly connected graph:
+any two points can be connected with directed path
+
+root of a directed graph:
+v is a root of a directed graph G, if for any point u in G,
+there is a directed path from u to v.
+
+directed tree:
+There is a point r so that
+	for any v != r, v is the initial point of one and only one arc,
+	r is not an initial point,
+	r is a root.
+
+In a directed tree:
+	For any point v != r, there exists one and only one directed path to r,
+	There is no directed loop,
+	There are at most one arc between two vertices.
+
+Theorem:
+A directed tree, if its directions are ignored, is a tree.
+A tree, if its root is designated, can generate a directed tree.
+
+
+Eulerian path: a directed path (e_1, e_2, ..., e_n) so that fin(e_n) = init(e_1), and every arc appears exactly once in the directed path.
+ 
+balanced directed graph: the indegree and outdegree of each point are balanced.
+
+Theorem: If G is a directed graph with no isolated points, then G has an Eulerian path iff G is balanced and strongly connected.
+
+https://en.wikipedia.org/wiki/Eulerian_path
+
+
+Hamiltonian path:
+a path such that every point appears in the path exactly once.
+
+Hamiltonian loop
+
+Hamiltonian graph:
+a graph with a Hamiltonian loop
+
+There is no satisfactory theorems that tells us about necessary and sufficient condition of being a Hamiltonian graph!
+
+https://en.wikipedia.org/wiki/Hamiltonian_path
