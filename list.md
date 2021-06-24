@@ -169,3 +169,15 @@
 [图论](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/graph_theory.txt)
 
 ![图论](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/graph_theory.svg)
+
+# 28 数学物理方程
+
+2021/06/24
+
+![数学物理方程](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/mathematical_physics.svg)
+
+# 29 序数效用
+
+2021/06/24
+
+![序数效用](https://cdn.jsdelivr.net/gh/UlyssesZh/rdc_math_club_2020@master/ordinal_utility.svg)
